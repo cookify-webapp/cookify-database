@@ -1,6 +1,6 @@
 db.createUser({
   user: "cookifyAdmin",
-  pwd: "GnNZLE4kJnBjfLnU",
+  pwd: "cookifyAdminPwd",
   roles: [
     {
       role: "readWrite",
