@@ -9,7 +9,7 @@ db.createUser({
   ],
 });
 
-db.createCollection("accounts", { capped: false });
+db.createCollection("accounts", { capped: false, collation: { locale: 'th' } });
 
 db.accounts.insertMany([
   {
