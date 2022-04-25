@@ -11,4 +11,4 @@ services:
 networks:
     default:
       external:
-        name: cookify-devops_cookify-webapp-prd
+        name: cookify-devops_cookify-webapp
