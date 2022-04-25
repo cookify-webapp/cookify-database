@@ -1,0 +1,14 @@
+version: "3"
+services:
+  mongodb:
+    image: ghcr.io/cookify-webapp/cookify-database
+    container_name: "mongodb"
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo-data:/data/db
+networks:
+    default:
+      external:
+        name: cookify-devops_cookify-webapp-prd
