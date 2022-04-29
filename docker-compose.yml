@@ -7,7 +7,7 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - ./init-script/init-script.js:/docker-entrypoint-initdb.d
+      - ./init-script/init-script.js:/docker-entrypoint-initdb.d/init-script.js:ro
       - ./mongo-data:/data/db
 networks:
     default:
